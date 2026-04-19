@@ -94,10 +94,6 @@ Images, Documents (PDF, Word, Excel), Archives (ZIP, RAR), Text files, Videos, A
 - Total storage: 5GB
 - Rate limit: 100 requests per 15 minutes
 
-## Deployment
-
-See [VPS_SETUP.md](VPS_SETUP.md) for complete VPS deployment guide.
-
 ## License
 
 ISC

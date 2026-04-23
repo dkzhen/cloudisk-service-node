@@ -21,6 +21,12 @@ const storage = multer.diskStorage({
 const fileFilter = (req, file, cb) => {
     if (ALLOWED_MIME_TYPES.includes(file.mimetype)) {
         cb(null, true);
+    } else if (
+        file.mimetype === "application/octet-stream" &&
+        file.originalname.toLowerCase().endsWith(".apk")
+    ) {
+        // APK sering terdeteksi sebagai octet-stream oleh beberapa client/browser
+        cb(null, true);
     } else {
         cb(new Error(`File type not allowed: ${file.mimetype}`), false);
     }

@@ -26,6 +26,9 @@ export const ALLOWED_MIME_TYPES = [
     "application/x-7z-compressed",
     "application/gzip",
     
+    // Android Package (APK)
+    "application/vnd.android.package-archive",
+    
     // Text
     "text/plain",
     "text/csv",
